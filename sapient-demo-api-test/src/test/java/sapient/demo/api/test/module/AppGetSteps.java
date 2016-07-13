@@ -10,14 +10,14 @@ import org.junit.Test;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.Response;
 
-public class ProviderGetSteps {
+public class AppGetSteps {
 
     public final String uid = "1003000126";
 
-    public ProviderGetSteps() {
-        RestAssured.baseURI = "http://hrsaext1dev.nih.gov";
-        RestAssured.port = 8380;
-        RestAssured.basePath = "/sdms-provider-service";
+    public AppGetSteps() {
+        RestAssured.baseURI = "";
+        // RestAssured.port = ;
+        RestAssured.basePath = "";
     }
 
     @Step
