@@ -4,8 +4,10 @@ import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.ManagedPages;
 import net.thucydides.core.pages.Pages;
 
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -17,36 +19,6 @@ public class GooglePage extends PageObject {
 
     @ManagedPages
     private Pages pages;
-
-    @FindBy(name = "alienNum")
-    protected static WebElement AnumField;
-
-    @FindBy(id = "input_deptOfStateId")
-    protected static WebElement dosIDField;
-
-    @FindBy(id = "addBtn")
-    protected static WebElement addBtn;
-
-    @FindBy(id = "continueBtn")
-    protected static WebElement continueBtn;
-
-    @FindBy(id = "continue-button")
-    protected static WebElement HomecontinueBtn;
-
-    @FindBy(id = "idProofLink")
-    protected static WebElement createUSCISAccount;
-
-    @FindBy(id = "ivPayGovBtn")
-    protected static WebElement PayGovBtn;
-
-    @FindBy(id = "submitButton")
-    WebElement payFeeBtn;
-
-    @FindBy(id = "idProofLink")
-    protected static WebElement createUSCISAcctBtn;
-
-    @FindBy(id = "idProofBtn")
-    protected static WebElement clickNextBtn;
 
     // protected static WebDriver driver;
     // protected WebDriverWait waitDriver;
@@ -84,12 +56,24 @@ public class GooglePage extends PageObject {
     // waitABit(200);
     // return this;
     // }
+    @Test
     public void gotoAppPage() {
-
+      
         // openAt(baseURL);
-        open();
-        getDriver().manage().deleteAllCookies();
-        getDriver().manage().window().maximize();
+        // System.setProperty("webdriver.ie.driver", "C:\\Program Files\\Internet Explorer\\iexplore.exe");
+        // driver = new InternetExplorerDriver();
+        // System.setProperty("webdriver.chrome.driver",
+        // "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+    	System.out.println("base url = " + pages.getConfiguration().getBaseUrl());
+        HtmlUnitDriver unitDriver = new HtmlUnitDriver();
+        // driver = new ChromeDriver();
+        unitDriver.manage().window().maximize();
+        // open();
+        // unitDriver.get("https://www.google.com/");
+        unitDriver.get("https://www.google.com/");
+        System.out.println("browser title = " + unitDriver.getTitle());
+        // getDriver().manage().deleteAllCookies();
+        // getDriver().manage().window().maximize();
         // open("write", null);
         // System.out.println("base url = " + pages.getConfiguration().getBaseUrl());
 

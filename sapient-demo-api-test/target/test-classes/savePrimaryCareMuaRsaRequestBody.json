@@ -1,0 +1,68 @@
+{
+   "homeState":"VA",
+   "designationId":-1,
+   "designationName":"automationuser",
+   "disciplineTypeCode":{
+      "codeId":800,
+      "id":"PC",
+      "label":"Primary Care",
+      "maxDistance":60
+   },
+   "score":null,
+   "statusCode":null,
+   "application":{
+      "designationApplicationId":-1,
+      "highestValidPageCode":{
+         "codeId":2700,
+         "description":"New"
+      },
+      "preferences":{
+         "basemap":"gray",
+         "selectedLayers":"Components_Census_Tract_Census_Tracts:0,Designation_PC_MUA/P:3",
+         "timeout":null,
+         "lastSavedTimeMilli":0
+      },
+      "overlappingDesignations":[
+
+      ]
+   },
+   "withdrawnByDesignationId":null,
+   "reinstatedFromDesignationId":null,
+   "demographicDataPoints":[
+
+   ],
+   "insufficientCapacityData":[
+
+   ],
+   "area":{
+      "geoUnitPublicIds":[
+         "51059440100"
+      ],
+      "areaName":"test",
+      "selectedComponentType":"Census_Tract"
+   },
+   "popType":{
+      "popTypeId":16,
+      "description":"Medically Underserved Area"
+   },
+   "srsaComponents":null,
+   "transportationMethod":null,
+   "nearestNonDesignatedProviderComment":null,
+   "hpsaTypeCode":null,
+   "providerTypeCode":null,
+   "defaultPopulationCenterLatitude":null,
+   "defaultPopulationCenterLongitude":null,
+   "populationCenterLatitude":null,
+   "populationCenterLongitude":null,
+   "populationCenterExplanationComment":null,
+   "isMentalCatchmentAreaPlan":false,
+   "isGeographicHighNeedsArea":false,
+   "nearestNonDesignatedProviders":[
+
+   ],
+   "muapTypeCode":{
+      "codeId":2900,
+      "description":"MUA"
+   },
+   "isGovernorsException":false
+}

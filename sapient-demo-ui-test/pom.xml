@@ -12,7 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<serenity.version>1.1.24</serenity.version>
+		<serenity.version>1.1.20</serenity.version>
 		<serenity.maven.version>1.1.1</serenity.maven.version>
 		<serenity.cucumber.version>1.1.1</serenity.cucumber.version>
 		<cucumber.version>1.2.4</cucumber.version>
@@ -35,6 +35,17 @@
 	</pluginRepositories>
 
 	<dependencies>
+			   <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>2.48.2</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.1</version>
+</dependency>
+
 		<dependency>
 			<groupId>net.serenity-bdd</groupId>
 			<artifactId>serenity-core</artifactId>
@@ -45,6 +56,7 @@
 			<artifactId>serenity-junit</artifactId>
 			<version>${serenity.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>net.serenity-bdd</groupId>
 			<artifactId>serenity-rest-assured</artifactId>
@@ -77,11 +89,11 @@
 			<version>4.12</version>
 			<!-- <scope>test</scope> -->
 		</dependency>
-		<dependency>
-			<groupId>com.googlecode.lambdaj</groupId>
-			<artifactId>lambdaj</artifactId>
-			<version>2.3.3</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.googlecode.lambdaj</groupId> -->
+<!-- 			<artifactId>lambdaj</artifactId> -->
+<!-- 			<version>2.3.3</version> -->
+<!-- 		</dependency> -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>

@@ -4,4 +4,4 @@ Feature: Sapient Demo UI Test
 
   Scenario: user passed the quiz at first attempt
     Given go to google page
-    And enter search key "sapient"
+   # And enter search key "sapient"
